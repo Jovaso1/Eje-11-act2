@@ -1,0 +1,24 @@
+package eje.pkg11.act2;
+import java.util.Scanner;
+public class Eje11Act2 {
+
+    public static void main(String[] args) {
+        double A, B, C;
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Primer numero: ");
+        A = teclado.nextDouble();
+        
+        System.out.print("Segundo numero: ");
+        B = teclado.nextDouble();
+        
+        System.out.print("Tercer numero: ");
+        C = teclado.nextDouble();
+        if (A > B && A > C){
+            System.out.println("El numero mayor es el primero: " + A);
+        } else if (B > A && B > C){
+            System.out.println("El numero mayor es el segundo: " + B);
+        }else {
+            System.out.println("El numero mayor es el tercero: " + C);
+        } 
+    }
+}
